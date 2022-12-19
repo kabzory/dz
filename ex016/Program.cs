@@ -7,13 +7,13 @@ int count = 0;
 
 void biggerzero(int[] array)
 {
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i] > 0)
+    for (int i = 0; i < array.Length; i++)
     {
-        count++;
+        if (array[i] > 0)
+        {
+            count++;
+        }
     }
-}
 }
 
 biggerzero(array);
