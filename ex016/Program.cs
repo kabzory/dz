@@ -2,7 +2,7 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 Console.Write("Введите элементы(через пробел): ");
-int[] array = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int[] array = Array.ConvertAll(Console.ReadLine()!.Split(), int.Parse);
 int count = 0;
 
 void biggerzero(int[] array)
@@ -18,6 +18,3 @@ void biggerzero(int[] array)
 
 biggerzero(array);
 Console.WriteLine($"Кол-во элементов больше нуля: {count}");
-
-
-
